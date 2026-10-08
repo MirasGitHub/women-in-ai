@@ -1,0 +1,64 @@
+
+:root{
+    --bg-primary: #fff;
+    --primary-dark: #212121
+}
+
+.card{
+    width: 300px;
+    height: 450px;
+    background-color: var(--bg-primary);
+    border: 1px solid rgb(230, 230, 224);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+}
+
+.info-block{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 15px;
+}
+
+.rates{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.rates p{
+    color: var(--primary-dark);
+}
+
+.cta-btn{
+    background-color: var(--primary-dark);
+    color: rgb(241, 241, 241);
+    border: none;
+    border-radius: 3px;
+    padding: 12px 15px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.cta-btn:hover{
+    cursor: pointer;
+    background-color: #3a3a3a;
+}
+
+.badge{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: rgb(252, 237, 239);
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+span.text-subtle{
+    font-size: 13px;
+}
