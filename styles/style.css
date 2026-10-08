@@ -1,7 +1,9 @@
 
 :root{
     --bg-primary: #fff;
-    --primary-dark: #212121
+    --primary-dark: #212121;
+    --badge-bg: rgb(252, 237, 239);
+    --badge-accent: #e5484d;
 }
 
 .card{
@@ -28,7 +30,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transition: transform 0.4s ease;
+    transition: transform 0.6s ease;
 }
 
 
@@ -73,14 +75,34 @@
     background-color: #3a3a3a;
 }
 
+.cta-btn .icon{
+    display: inline-block;
+}
+
+.cta-btn:hover .icon{
+    animation: nudge 0.8s ease-in-out infinite;
+}
+
 .badge{
     position: absolute;
     right: 10px;
     top: 10px;
-    background-color: rgb(252, 237, 239);
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--badge-bg);
     padding: 7px 10px;
     border-radius: 5px;
-    z-index: 2;
+}
+
+.badge::before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--badge-accent);
+    animation: pulse 1.6s ease-out infinite;
 }
 
 .text-subtle{
@@ -89,4 +111,21 @@
 
 span.text-subtle{
     font-size: 13px;
+}
+
+@keyframes nudge{
+    0%, 100% { transform: translateX(0); }
+    50%      { transform: translateX(5px); }
+}
+
+@keyframes pulse{
+    0% {
+        box-shadow: 0 0 0 0 rgba(229, 72, 77, 0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 6px rgba(229, 72, 77, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(229, 72, 77, 0);
+    }
 }
