@@ -1,0 +1,77 @@
+:root {
+	--text-primary: #ffffff;
+	--btn-primary: #842ecf;
+	--btn-primary-hover: #7523bd;
+	--font-size-regular: 16px;
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	min-height: 260px;
+	padding: 24px 20px;
+	background-image: url("../assets/landingbg.jpg");
+	background-size: cover; /* cover-ის შემთხვევაში, სურათმა მთლიანად დაფარა hero სექცია და ცარიელი სივრცეები არ დარჩენილა */
+	/* background-size: contain; */ /* სურათი მთლიანად გამოჩნდა მოჭრის გარეშე და ბევრი ცარიელი სივრცე დატოვა სექციის */
+	background-position: center;
+	background-repeat: no-repeat;
+	color: var(--text-primary);
+}
+
+.hero__content {
+	width: 100%;
+	max-width: 1120px;
+	margin: 0 auto;
+}
+
+.hero h1 {
+	max-width: 650px;
+	margin: 0 0 16px;
+	font-size: 30px;
+	line-height: 1.2;
+}
+
+.hero p {
+	margin: 0 0 24px;
+	font-size: var(--font-size-regular);
+	line-height: 1.6;
+}
+
+.button {
+	display: inline-block;
+	padding: 12px 24px;
+	border-radius: 8px;
+	background-color: var(--btn-primary);
+	color: var(--text-primary);
+	font-size: var(--font-size-regular);
+	font-weight: 700;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.button:hover {
+	background-color: var(--btn-primary-hover);
+}
+
+/* Tablet and Desktop */
+
+@media (min-width: 768px) {
+	.hero {
+		min-height: 400px;
+		padding: 40px 32px;
+	}
+
+	.hero h1 {
+		font-size: 44px;
+	}
+
+	.hero p {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.hero h1 {
+		font-size: 52px;
+	}
+}
