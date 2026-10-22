@@ -224,10 +224,14 @@ p {
     margin-bottom: 1rem;
 }
 
-.card-hint {
+.card-hint, .card-hint-desktop {
     margin-top: auto;
     color: var(--secondary);
     font-size: 0.8125rem;
+}
+
+.card-hint-desktop{
+    display: none;
 }
 
 
@@ -312,5 +316,12 @@ p {
     .cards {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1.25rem;
+    }
+
+    .card-hint-desktop{
+        display: block;
+    }
+    .card-hint{
+        display: none;
     }
 }
