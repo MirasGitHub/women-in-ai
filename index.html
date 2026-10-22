@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header class="header">
+      <a href="#" class="logo">Nova<span>.</span></a>
+
+      <nav class="header-nav" aria-label="მთავარი ნავიგაცია">
+        <a href="#home">მთავარი</a>
+        <a href="#services">სერვისები</a>
+        <a href="#about">ჩვენ შესახებ</a>
+      </nav>
+
+      <button class="menu-btn" aria-label="მენიუ">☰</button>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <h2>ნავიგაცია</h2>
+        <nav>
+          <a href="#home">🏠 მთავარი</a>
+          <a href="#services">💡 სერვისები</a>
+          <a href="#about">👥 ჩვენს შესახებ</a>
+          <a href="#contact">✉ კონტაქტი</a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <section class="hero" id="home">
+          <div class="hero-content">
+            <span class="eyebrow">მოგესალმები Nova-ში</span>
+            <h1>შექმენი შენი <span>ციფრული</span> მომავალი.</h1>
+            <p>
+              თანამედროვე დიზაინი, მოქნილი სტრუქტურა და მომხმარებელზე მორგებული
+              გამოცდილება.
+            </p>
+            <a href="#services" class="primary-btn">აღმოაჩინე მეტი →</a>
+          </div>
+        </section>
+
+        <section class="services" id="services">
+          <div class="section-heading">
+            <span class="eyebrow">რას გთავაზობთ</span>
+            <h2>ჩვენი სერვისები</h2>
+            <p>გადაატარე მაუსი ბარათებს, რათა ნახო უკანა მხარე.</p>
+          </div>
+
+          <div class="cards">
+            <article class="flip-card">
+              <div class="flip-card-inner">
+                <div class="card-front">
+                  <span class="card-icon">🎨</span>
+                  <h3>ვებ დიზაინი</h3>
+                  <p>თანამედროვე და მიმზიდველი ვიზუალი.</p>
+                  <span class="card-hint">გადაატარე მაუსი ↻</span>
+                </div>
+                <div class="card-back">
+                  <h3>ვებ დიზაინი</h3>
+                  <p>
+                    ვქმნით მომხმარებელზე ორიენტირებულ, ესთეტიკურ და ფუნქციურ
+                    ინტერფეისებს.
+                  </p>
+                  <a href="#contact">დაგვიკავშირდი →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="flip-card">
+              <div class="flip-card-inner">
+                <div class="card-front">
+                  <span class="card-icon">💻</span>
+                  <h3>ვებ დეველოპმენტი</h3>
+                  <p>სწრაფი და ადაპტირებადი ვებგვერდები.</p>
+                  <span class="card-hint">გადაატარე მაუსი ↻</span>
+                </div>
+                <div class="card-back">
+                  <h3>ვებ დეველოპმენტი</h3>
+                  <p>
+                    HTML და CSS ტექნოლოგიებით ვქმნით სუფთა და მოქნილ სტრუქტურას.
+                  </p>
+                  <a href="#contact">დაგვიკავშირდი →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="flip-card">
+              <div class="flip-card-inner">
+                <div class="card-front">
+                  <span class="card-icon">📱</span>
+                  <h3>Responsive დიზაინი</h3>
+                  <p>იდეალური გამოცდილება ყველა ეკრანზე.</p>
+                  <span class="card-hint">გადაატარე მაუსი ↻</span>
+                </div>
+                <div class="card-back">
+                  <h3>Responsive დიზაინი</h3>
+                  <p>
+                    Mobile First მიდგომით ვქმნით მობილურზე, პლანშეტსა და
+                    კომპიუტერზე მორგებულ გვერდებს.
+                  </p>
+                  <a href="#contact">დაგვიკავშირდი →</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="about" id="about">
+          <div>
+            <span class="eyebrow">ჩვენ შესახებ</span>
+            <h2>მარტივი კოდი. დიდი შესაძლებლობები.</h2>
+          </div>
+          <p>
+            პროექტი შექმნილია Mobile First პრინციპით. სტილები ორგანიზებულია
+            ცალკეულ ფაილებში, ხოლო ზომებისთვის გამოყენებულია rem ერთეულები.
+          </p>
+        </section>
+
+        <section class="contact" id="contact">
+          <h2>მზად ხარ დასაწყებად?</h2>
+          <p>შექმენი შენი შემდეგი ციფრული პროექტი ჩვენთან ერთად.</p>
+          <a href="mailto:hello@example.com" class="primary-btn"> მოგვწერე </a>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <a href="#" class="logo">Nova<span>.</span></a>
+      <p>© 2026 Nova. ყველა უფლება დაცულია.</p>
+      <a href="#home">ზემოთ ↑</a>
+    </footer>
+  
+
+</body>
+</html>
