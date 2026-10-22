@@ -41,6 +41,7 @@ body {
     font-size: 1.75rem;
     font-weight: 800;
     letter-spacing: -0.0625rem;
+    color: #fff;
 }
 
 .logo span, .hero h1 span {
@@ -177,7 +178,6 @@ p {
     perspective: 62.5rem;
 }
 
-
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -264,6 +264,12 @@ p {
     padding-bottom: 0.25rem;
     border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.6);
     font-weight: 700;
+    color:#28d94e; 
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus-visible .flip-card-inner{
+    transform: rotateY(180deg);
 }
 
 
