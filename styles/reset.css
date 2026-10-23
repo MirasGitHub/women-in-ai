@@ -10,11 +10,26 @@
 
 html{
     scroll-behavior: smooth;
+    font-size: 100%;
 }
 
 a{
     text-decoration: none;
     transition: color 0.25s ease;
+    color: inherit;
+}
+
+img,
+video,
+svg {
+    display: block;
+}
+
+input,
+textarea,
+button,
+select{
+    font: inherit;
 }
 
 button {
