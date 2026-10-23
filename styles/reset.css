@@ -1,45 +1,49 @@
 /* RESET STYLES */
 
-*, 
-*::before, 
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@layer reset {
 
-html{
-    scroll-behavior: smooth;
-    font-size: 100%;
-}
+    *, 
+    *::before, 
+    *::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-a{
-    text-decoration: none;
-    transition: color 0.25s ease;
-    color: inherit;
-}
+    html{
+        scroll-behavior: smooth;
+        font-size: 100%;
+    }
 
-img,
-video,
-svg {
-    display: block;
-}
+    a{
+        text-decoration: none;
+        transition: color 0.25s ease;
+        color: inherit;
+    }
 
-input,
-textarea,
-button,
-select{
-    font: inherit;
-}
+    img,
+    video,
+    svg {
+        display: block;
+    }
 
-button {
-    cursor: pointer;
-}
+    input,
+    textarea,
+    button,
+    select{
+        font: inherit;
+    }
 
-h1 {
-    font-size: clamp(2.25rem, 7vw, 4.5rem);
-}
+    button {
+        cursor: pointer;
+    }
 
-h2 {
-    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    h1 {
+        font-size: clamp(2.25rem, 7vw, 4.5rem);
+    }
+
+    h2 {
+        font-size: clamp(1.75rem, 5vw, 2.5rem);
+    }
+
 }
