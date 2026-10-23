@@ -54,6 +54,14 @@ body {
     color: var(--muted);
 }
 
+.header-nav a{
+        color: #fff;
+    }
+
+.header-nav a:hover{
+        color: var(--secondary);
+}
+
 
 .menu-btn {
     display: grid;
@@ -311,6 +319,46 @@ p {
 .footer > a:last-child {
     color: var(--secondary);
 }
+
+
+@media (min-width: 48rem) {
+    .header{
+        padding: 2rem;
+    }
+    .header-nav{
+        display: flex;
+    }
+
+    .menu-btn{
+        display: none;
+    }
+
+    .hero{
+        min-height:32rem;
+        padding: 5rem 2rem;
+    }
+
+    .services{
+        padding: 5rem 2rem;
+    }
+
+    .cards{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: center;
+        padding: 4rem 2rem;
+    }
+
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+}
+
 
 @media (min-width: 64rem) {
     .cards {
