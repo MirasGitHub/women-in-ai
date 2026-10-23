@@ -87,6 +87,27 @@ body {
     border-right: 0.0625rem solid var(--border);
 }
 
+.sidebar nav {
+    display: grid;
+    gap: 1.75rem;
+}
+
+.sidebar h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.sidebar nav a {
+    padding: 0.75rem;
+    color: var(--muted);
+    border-radius: 0.625rem;
+}
+
+.sidebar nav a:hover {
+    color: var(--text);
+    background: var(--surface-light);
+}
+
 .hero {
     display: flex;
     align-items: center;
@@ -320,7 +341,7 @@ p {
     color: var(--secondary);
 }
 
-
+/* 768-1023 px-მდე */
 @media (min-width: 48rem) {
     .header{
         padding: 2rem;
@@ -360,7 +381,16 @@ p {
 }
 
 
+/* 1024 px-დან */
 @media (min-width: 64rem) {
+    .layout{
+        display: grid;
+        grid-template-columns: 13rem minmax(0, 1fr);
+    }
+
+    .sidebar{
+        display: block;
+    }
     .cards {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1.25rem;
@@ -371,5 +401,16 @@ p {
     }
     .card-hint{
         display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduced){
+    *, 
+    *::after,
+    *::before{
+        scroll-behavior: auto !important;
+        transition-duration: 0.1ms !important;
+        animation-duration: 0.1ms !important;
+        animation-iteration-count: 1 !important;
     }
 }
